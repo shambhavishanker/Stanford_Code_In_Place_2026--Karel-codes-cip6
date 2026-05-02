@@ -1,0 +1,52 @@
+from karel.stanfordkarel import *
+
+"""
+Each row starts with a stack of beepers. Karel should pick them
+up, one at a time, and spread them down the row. 
+Caution! Karel can't count, and starts with infinite beepers in
+her bag. How can you solve this puzzle?
+"""
+def main():
+    move()
+    spread_beepers()
+    come_back()
+
+#while beepers present, it picks a beeper, moves a step and puts beeper, if beeper is already present in that spot, it moves another step and puts beeper, then comes back
+def spread_beepers():
+    while beepers_present():
+        pick_beeper()  
+        if beepers_present():
+            move_another_step()
+            put_beeper()
+            come_back()
+    put_beeper()
+
+
+def turn_around():
+    for i in range(2):
+        turn_left()
+       
+#moves back to the start position and moves one step
+def  come_back():
+    turn_around()
+    while front_is_clear():
+        move()
+    turn_around()
+    move()
+    
+def move_another_step():
+    while beepers_present():
+        move()
+
+"""
+move and pick a beeper
+move and put beeper
+come back
+pick beeper and put next beeper
+"""
+
+
+
+# There is no need to edit code beyond this point
+if __name__ == '__main__':
+    main()
