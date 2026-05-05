@@ -1,0 +1,17 @@
+from ai import call_gpt
+
+def main():
+    name= input("Enter your name:")
+    topic= input("Enter a topic:")
+
+    haiku= call_gpt(f"turn {name} and {topic} into a haiku.")
+
+    print("Creating yout haiku...")
+    print("Thinking...")
+    
+    print(haiku)
+
+
+
+if __name__ == "__main__":
+    main()
