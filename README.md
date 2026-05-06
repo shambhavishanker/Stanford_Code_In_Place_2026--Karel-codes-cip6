@@ -5,12 +5,21 @@
 This is a collection of my solutions, exercises and projects from Stanford University's Code in Place 2026 program.
 
 ## About Code in Place
-Code in Place is a global introductory programming course organized by Stanford University and taught by volunteer section leaders worldwide.The program provides an engaging and collaborative learning environment that has helped thousands of students begin their journey in Python and computer science.
+Code in Place is a global introductory programming course organized by Stanford University and taught by volunteer section leaders worldwide. The program provides an engaging and collaborative learning environment that has helped thousands of students begin their journey in Python and computer science.
+Code in Place consists of the first half of the CS106A course taught at Stanford in Python.
 
+## Modules
+The following topics are covered in each weekly Section:
+
+Python basics
+Art of Karel
+Console programming
+Graphics
+Animations
+Lists and Dicts
 
 ## Support
 If you found this repository useful or learned something from it, consider giving it a star!⭐️
-
 
 
 
